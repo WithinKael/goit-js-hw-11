@@ -1,0 +1,135 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-section {
+  padding: 60px 0;
+  background: linear-gradient(to right, #000000, #54005f, #bcbcbc);
+}
+
+.search-form {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  height: 40px;
+  flex-grow: 1;
+  font-size: 18px;
+  padding-left: 15px;
+  border: 1px solid #303030;
+}
+
+.search-btn {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: #121212;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.load-more {
+  display: block;
+  font-size: 14px;
+  border-radius: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #121212;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.search-btn:hover,
+.search-btn:focus,
+.load-more:hover,
+.load-more:focus {
+  background-color: #cd8fe9;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.photo-card {
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+}
+
+.gallery-img {
+  width: 280px;
+  height: 200px;
+}
+
+.info {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 10px;
+}
+
+.info-item {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 13px;
+}

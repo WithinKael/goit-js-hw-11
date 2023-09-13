@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-
-
-    <script type="module" src="js/index.js"></script>
+    <section class="gallery-section">
+        <div class="container">
+            <form class="search-form" id="search-form">
+                <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." class="search-input" required/>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+            <div class="gallery"></div>
+            <button type="button" class="load-more is-hidden">
+                Load more
+            </button>
+        </div>
+    </section>
+   
+    <script src="./js/photosapi.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
